@@ -1,6 +1,7 @@
 ### Members
 
 Arthur Brito de Araujo Costa
+Lai Sum Justina Chan
 
 ## Requirements
 
