@@ -11,5 +11,14 @@ function bachelors_register_styles(){
 // During wordpress hook, add this function to be called
 add_action('wp_enqueue_scripts', "bachelors_register_styles");
 
+function bachelors_register_scripts(){    
+    wp_enqueue_script("bachelors_jquery", "https://code.jquery.com/jquery-3.5.1.slim.min.js", array(), '3.5.1', true);
+    wp_enqueue_script("bachelors_bootstrap", "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", array("bachelors-jquery"), '4.5.2', true);
+    wp_enqueue_script("bachelors_custom_js", get_template_directory_uri() . "/assets/js/main.js", array("bachelors-jquery"), '0.0.1', true);
+
+}
+
+// During wordpress hook, add this function to be called
+add_action('wp_enqueue_scripts', "bachelors_register_scripts");
 
 ?>
