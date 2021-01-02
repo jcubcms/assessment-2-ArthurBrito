@@ -35,7 +35,9 @@ services:
     ports:
       - "8000:80"
     restart: always
-    volumes: ["./:/var/www/html"]
+    volumes:
+      - "./:/var/www/html"
+      - ./bachelors-theme:/var/www/html/wp-content/themes
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
