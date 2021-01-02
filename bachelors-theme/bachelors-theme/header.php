@@ -8,9 +8,9 @@
         wp_head();
     ?>
 </head>
-<body>
-<header>
-I'm the header
-</header>
-</body>
+    <body>
+        <header>
+        I'm the header
+        </header>
+    </body>
 </html
