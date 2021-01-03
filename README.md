@@ -5,6 +5,8 @@ Arthur Brito de Araujo Costa
 Lai Sum Justina Chan
 
 Quoc Phong Luong
+
+Ta Gia Lan
 ## Requirements
 
 Make sure you have the latest versions of **Docker** and **Docker Compose** installed on your machine.
