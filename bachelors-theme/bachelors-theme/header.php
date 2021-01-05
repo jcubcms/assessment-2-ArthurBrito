@@ -12,7 +12,11 @@
         <header>
             <div class="container">
                 <nav>
-                <img id="logo" src="/wp-content/themes/bachelors-theme/assets/images/logo.png"/>
+                <?php
+                    if(function_exists("the_custom_logo")) {
+                        the_custom_logo();
+                    } 
+                ?>    
                 <?php 
                     wp_nav_menu(
                         array(
