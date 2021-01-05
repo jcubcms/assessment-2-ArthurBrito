@@ -7,9 +7,10 @@ Lai Sum Justina Chan
 Quoc Phong Luong
 
 Ta Gia Lan
+
 ## Requirements
 
-Make sure you have the latest versions of **Docker** and **Docker Compose** installed on your machine.
+Make sure you have the latest versions of **Docker** and **Docker Compose** and **git** installed on your machine.
 
 Clone this repository or copy the files from this repository into a new folder. In the **docker-compose.yml**
 
@@ -20,11 +21,15 @@ Make sure to [add your user to the `docker` group](https://docs.docker.com/insta
 This file will setup Wordpress, MySQL & PHPMyAdmin with a single command. Add the code below to a file called "docker-compose.yaml" and run the command
 
 ```
-$ docker-compose up -d
+$ docker-compose up
 
 # To Tear Down
 $ docker-compose down --volumes
 ```
+
+This will run MySQL, Wordpress and PHPmyAdmin which is what is necessary to start the development
+
+Now open the browser and open `locahost:8000` to see the wordpress running
 
 ## Git Workflow
 
@@ -35,6 +40,9 @@ The workflow start with cloning the repository
 `git clone https://github.com/jcu-cms-bachelors/Assignment-2.git`
 
 This will make a copy of the repository into your own profile.
+
+Open the directory
+`cd Assigment-2`
 
 To startup creating a branch for the feature you are developing run
 
