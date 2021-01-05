@@ -1,4 +1,4 @@
-### Members
+### Members (Group 9)
 
 Arthur Brito de Araujo Costa
 
@@ -69,3 +69,7 @@ Pull Requests needs to be reviewed by the peers to be merged into **Staging** en
 [A staging environment is the last step before something goes into production and is visible on the live site. ](https://umbraco.com/about-us/umbraco-dictionary/staging-environment/#:~:text=A%20staging%20environment%20is%20the,they%20hit%20the%20live%20website. "A staging environment is the last step before something goes into production and is visible on the live site. ")
 
 After the things are push into staging and tested we can then push to the production which is the **main** branch.
+
+## Deploy
+
+The file `bachelors-theme ` is a wordpress theme and should be imported as one using the upload theme option inside the wordpress admin.
