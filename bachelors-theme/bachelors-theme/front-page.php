@@ -2,16 +2,16 @@
 <?php
     get_header();
 ?>
-<main>
+<main class="container">
 
-<?php
-    if(have_posts()) {
-        while( have_posts()) {
-            the_post();
-            the_content();
+    <?php
+        if(have_posts()) {
+            while( have_posts()) {
+                the_post();
+                the_content();
+            }
         }
-    }
-?>
+    ?>
    
 </main>
 

@@ -5,5 +5,9 @@ wp-includes/
 wp-*
 xmlrpc.php
 index.php
+footer.php
 readme.html
 license.txt
+*twentynineteen/
+*twentyseventeen/
+*twentytwenty/

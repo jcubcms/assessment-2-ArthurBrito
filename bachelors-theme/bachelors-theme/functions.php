@@ -21,9 +21,6 @@ function bachelors_register_scripts(){
 // During wordpress hook, add this function to be called
 add_action('wp_enqueue_scripts', "bachelors_register_scripts");
 
-
-
-
 function wpb_custom_new_menu() {
   register_nav_menus(
     array(
@@ -32,6 +29,22 @@ function wpb_custom_new_menu() {
     )
   );
 }
+
+function bachelors_menus() {
+  $locations = array(
+    'primary' => "Desktop Left Menu",
+    'footer' => "Footer Menu Items"
+  );
+
+  register_nav_menus($locations);
+}
+
+add_action("init", "bachelors_menus");
+
+function bachelors_theme_support() {
+  add_theme_support("title-tag");
+}
+
 add_action( 'init', 'wpb_custom_new_menu' );
 
 add_theme_support( 'custom-logo', array(
@@ -41,4 +54,6 @@ add_theme_support( 'custom-logo', array(
 	'flex-width'  => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
+
+add_theme_support("after_setup_theme", "bachelors_theme_support");
 ?>

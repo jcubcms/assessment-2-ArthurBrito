@@ -6,7 +6,16 @@ Description:
 Tags: assignment 2
 Author: Arthur Costa, Justina, Quoc, Bo Ta
 */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
+* {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+}
 html {
   padding: 0;
   margin: 0;
@@ -19,5 +28,76 @@ html {
   height: 100vh;
   width: var(--sidebar-width);
   background: var(--primary);
-  color: #fff
+  color: #fff;
 }
+/* Header */
+header {
+  height: 100px;
+  background-color: #384a9c;
+}
+
+.custom-logo {
+  margin-top: 10px;
+  height: 80px;
+  margin-right: 2rem;
+  width: auto;
+}
+nav {
+  display: flex;
+}
+.nav-menu {
+  flex-basis: 60%;
+  height: 40px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+.menu-item a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+.menu-item a:hover {
+  text-decoration: underline;
+  color: #ffc709;
+}
+img {
+  border-radius: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* End Header */
+
+/* Homepage */
+
+main {
+  padding-top: 3rem;
+}
+/* End Homepage */
+
+/* Post */
+.title-wrapper h2 {
+  color: #ffc709;
+}
+/* End Post */
+
+/* Footer */
+footer {
+  height: 100px;
+  background-color: #091341;
+}
+.footer-menu {
+  padding-top: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+.footer-menu li {
+  padding-right: 20px;
+}
+/* End Footer */
