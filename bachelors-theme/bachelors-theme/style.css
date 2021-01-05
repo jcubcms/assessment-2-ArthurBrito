@@ -43,7 +43,7 @@ header {
   width: auto;
 }
 nav {
-  display: flex;
+  display: flex !important;
 }
 .nav-menu {
   flex-basis: 60%;
