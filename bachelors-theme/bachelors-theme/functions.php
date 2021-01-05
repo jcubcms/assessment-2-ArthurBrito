@@ -21,4 +21,24 @@ function bachelors_register_scripts(){
 // During wordpress hook, add this function to be called
 add_action('wp_enqueue_scripts', "bachelors_register_scripts");
 
+
+
+
+function wpb_custom_new_menu() {
+  register_nav_menus(
+    array(
+      'my-custom-menu' => __( 'My Custom Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'wpb_custom_new_menu' );
+
+add_theme_support( 'custom-logo', array(
+	'height'      => 20,
+	'width'       => 50,
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+) );
 ?>
