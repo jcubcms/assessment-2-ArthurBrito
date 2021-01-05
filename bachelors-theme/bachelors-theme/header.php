@@ -8,53 +8,22 @@
         wp_head();
     ?>
 </head>
-
-
     <body>
         <header>
-        <style>
-
-            div.custom-menu-class ul {
-            margin:20px 0px 20px 0px;
-            list-style-type: none;
-            list-style: none;
-            list-style-image: none;
-            text-align:right;
-            }
-            div.custom-menu-class li {
-                padding: 0px 20px 0px 0px;
-                display: inline;
-            } 
-            div.custom-menu-class a { 
-                color:#55555;
-            }
-            img, span {
-                margin-left: 10%;
-                margin-top: 30px;
-            }
-        </style>
-		<?php 
-        
-        
-   $custom_logo_id = get_theme_mod( 'custom_logo' );
-   $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-      ?>
-<img src="<?php echo $image[0]; ?>" alt="">
-</br>
-<span class='custom-logo-text'>The universtiy of the third age</span>
- 
-       <div>
-      
-       
-      
-		<?php
-      wp_nav_menu( array( 
-      'theme_location' => 'my-custom-menu', 
-       'container_class' => 'custom-menu-class' ) ); 
-    ?>
+            <div class="container">
+                <nav>
+                <img id="logo" src="/wp-content/themes/bachelors-theme/assets/images/logo.png"/>
+                <?php 
+                    wp_nav_menu(
+                        array(
+                            "menu" => "primary",
+                            "container" => "",
+                            "theme_location" => "primary",
+                            "items_wrap" => '<ul id="" class="nav-menu">%3$s</ul>'
+                        )
+                    );
+                ?>
+                </nav>
+            </div>
         </header>
-        </div>
-    </body>
-
-
-</html>
+ 
