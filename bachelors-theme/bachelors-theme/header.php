@@ -28,14 +28,23 @@
             div.custom-menu-class a { 
                 color:#55555;
             }
+            img, span {
+                margin-left: 10%;
+                margin-top: 30px;
+            }
         </style>
 		<?php 
+        
+        
    $custom_logo_id = get_theme_mod( 'custom_logo' );
    $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
       ?>
 <img src="<?php echo $image[0]; ?>" alt="">
+</br>
+<span class='custom-logo-text'>The universtiy of the third age</span>
+ 
        <div>
-       <span class='custom-logo-text'>The universtiy of the third age</span>
+      
        
       
 		<?php
