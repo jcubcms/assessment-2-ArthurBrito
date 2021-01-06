@@ -21,6 +21,10 @@ html {
   margin: 0;
   font-size: 16px;
 }
+
+body {
+  position: relative;
+}
 .header {
   position: fixed;
   left: 0;
@@ -79,6 +83,19 @@ ul {
 main {
   padding-top: 3rem;
 }
+
+main .sidebar {
+  padding-left: 16px;
+}
+
+::marker {
+  content: "";
+}
+
+.sidebar {
+  display: none;
+}
+
 /* End Homepage */
 
 /* Post */
@@ -162,3 +179,15 @@ footer .top-bar .menu-item-has-children:hover .sub-menu {
   display: block;
 }
 /* End Footer */
+
+@media (min-width: 480px) {
+  .sidebar {
+    display: block;
+    position: absolute;
+    background-color: #c1dff1;
+    border-radius: 16px;
+    padding: 16px;
+    left: 1rem;
+    top: 150px;
+  }
+}
