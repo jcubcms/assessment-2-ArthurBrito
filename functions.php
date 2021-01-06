@@ -39,5 +39,44 @@ register_nav_menus(
 
       );
 
+// Sidebars
+function my_sidebars()
+{
+
+        register_sidebar(
+
+                  array(
+
+                        'name' => 'Page Sidebars',
+                        'id' => 'page-sidebar',
+                        'before_title' => '<h3 class="widget-title">',
+                        'after_title' => '</h3>'
+
+                  )
+
+
+        );
+
+
+
+
+        register_sidebar(
+
+                  array(
+
+                        'name' => 'Blog Sidebars',
+                        'id' => 'blog-sidebar',
+                        'before_title' => '<h3 class="widget-title">',
+                        'after_title' => '</h3>'
+
+                  )
+
+
+        );
+
+
+}
+
+add_action('widgets_init','my_sidebars');
 
 ?>
